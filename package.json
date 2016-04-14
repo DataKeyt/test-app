@@ -1,0 +1,8 @@
+{
+  "name": "first-appish",
+  "description": "My first app-ish thing",
+  "main": "app.js",
+  "dependencies": {
+    "tabris": "^1.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tabrisjs.getting.started" version="1.0.0">
+    <name>TrafficLights</name>
+    <description>
+        My first test application with Tabris.js
+    </description>
+    <author email="dev@tabrisjs.com" href="https://tabrisjs.com">
+        Tabris.js Team
+    </author>
+</widget>
