@@ -1,4 +1,5 @@
 require("./traffican.js");
-require("./lights.js").open();
+require("./picture.js").open();
+require("./lights.js");
 
 new tabris.Drawer().append(new tabris.PageSelector());
