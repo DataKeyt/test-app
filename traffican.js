@@ -82,7 +82,7 @@ page.apply({
     "#tV": {textColor: "white", background: "green", opacity: 0.9, cornerRadius: 10},
     "#ClickMe": {background: "green", textColor: "white", opacity: 0.8, cornerRadius: 30},
     "#animateButton": {background: "red", opacity: 0.9, textColor: "white", cornerRadius: 30, height: 50},
-    "#red": {position: "absolute", zIndex: 99999, cornerRadius: 10}
+    "#red": {position: "absolute", elevation: 99999, cornerRadius: 10}
 });
 
 page.open();

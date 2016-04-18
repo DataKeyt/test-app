@@ -1,29 +1,37 @@
 var MARGIN = 12;
-var IMAGE_SIZE = 1500;
 
 var trayHeight;
 var trayState = "down";
 var dragOffset;
 
+//Adding the kitty picture to the page
 var page = new tabris.Page({
     title: "Sleeping kitty",
-    backgroundImage: {src: "images/kiiisu.png", scaleMode: "stretch", centerX: 0, centerY: 10}
+    topLevel: true
 });
+//scaleMode: "fit" is another way to fit the picture on the screen
+
 
 //new tabris.ImageView({
 //  centerX: 0, top: 15,
-//image: {src: "images/kiisu_opt.png"}
+//image: {src: "images/kiiisu.png"}
 //}).appendTo(page);
 
-new tabris.TextView({
-    centerX: 0, top: 0,
-    text: "Cover the kitty with a blanket.",
-    textColor: "#777"
+var textView = new tabris.TextView({
+    top: 0, centerX: 0,
+    text: "Cover the kitty with a blanket",
+    textColor: "#ff71dc",
+    elevation: 999,
+    font: "bold italic 24px"
+}).appendTo(page);
+
+new tabris.ImageView({
+    image: {src: "images/kiiisu.png", width: 360, centerX: 0, height: 770, top: [textView, 20]}
 }).appendTo(page);
 
 var shade = new tabris.Composite({
     layoutData: {left: 0, right: 0, top: 0, bottom: 0},
-    background: "gray",
+    background: "#92998E",
     opacity: 0
 }).appendTo(page);
 
@@ -121,3 +129,4 @@ function getStrapIconTransform(translationY) {
     return {rotation: traveled * Math.PI - Math.PI};
 }
 
+page.open();
